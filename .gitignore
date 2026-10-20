@@ -1,0 +1,10 @@
+# 成果物フォルダの除外（OCRテキストやレビュー結果をアップロードしない）
+batch_reviews/
+# テスト用の一時ファイルやPDF
+*.pdf
+*.txt
+*.html
+temp_*
+# Pythonのキャッシュ
+__pycache__/
+.ipynb_checkpoints/
