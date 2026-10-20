@@ -2,7 +2,7 @@
   <img src="clobre.png" width="250" alt="CLOBRE Logo">
 </p>
 
-# 📦 CLOBRE: Closed LLM-Operationalized Batch Reviewing Engine
+# CLOBRE: Closed LLM-Operationalized Batch Reviewing Engine
 
 A 100% local, completely offline, privacy-first academic paper reviewer and manuscript brush-up assistant built with **Streamlit** and **Ollama**. 
 
