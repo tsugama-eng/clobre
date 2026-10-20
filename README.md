@@ -26,9 +26,7 @@ A 100% local, completely offline, privacy-first academic paper reviewer and manu
 
 ## ✨ Key Features
 
-- **Dual-Mode Workflow**: Trigger structured batch-processing pipelines using expert academic prompts, then immediately switch to an open-ended interactive chat to dissect specific weaknesses or structural ideas.
-- **24GB VRAM Optimization**: Seamlessly supports powerful 20B–35B parameter models (`gemma4:26b`, `gpt-oss:20b`, `command-r`) under standard 4-bit quantization, unlocking near GPT-4o intelligence locally.
-- **Enterprise-Grade Privacy**: Perfect for confidential unpublished manuscripts or internal research data. No telemetry, no API logs, and zero cloud leaks.
+- **Dual-Mode Workflow**: Trigger structured batch-processing pipelines using academic prompts, then immediately switch to an open-ended interactive chat to dissect specific weaknesses or structural ideas.
 - **Flexible Network & Cloud Integration**: Ready for secure deployment across local wireless networks (Wi-Fi), institutional fixed-IP infrastructures, or layered underneath Google Workspace organizational authentication.
 
 ---
