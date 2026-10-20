@@ -10,8 +10,6 @@ A 100% local, completely offline, privacy-first academic paper reviewer and manu
 
 ## ⚠️ IMPORTANT NOTICE / 重要なお知らせ
 
-## ⚠️ IMPORTANT NOTICE / 重要なお知らせ
-
 - **ジャーナルの規定について / Journal Policies**
   LLM（大規模言語モデル）の査読・校正への使用を明確に禁止しているジャーナルがあるため、査読・投稿予定の各ジャーナルの規約を必ず事前に確認した上でご使用ください。開発者は予備的な問題点のあぶりだしのみに使用しています。
   *Please note that some academic journals explicitly prohibit the use of Large Language Models (LLMs) for peer review, manuscript evaluation, or editing. Users must thoroughly verify the specific policies and guidelines of their target journals before utilizing this tool. The developer utilizes this tool strictly as a preliminary screening step to identify potential issues prior to formal submission.*
