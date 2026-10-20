@@ -79,8 +79,6 @@ Open your terminal/command prompt and pull the models optimized for your VRAM:
 ```PowerShell or bash
 ollama pull gpt-oss:20b
 ollama pull gemma4:26b
-ollama pull mistral:7b
-ollama pull command-r
 ```
 
 ---
