@@ -12,7 +12,7 @@ A 100% local, completely offline, privacy-first academic paper reviewer and manu
 
 - **ジャーナルの規定について / Journal Policies**
   LLM（大規模言語モデル）の査読・校正への使用を明確に禁止しているジャーナルがあるため、査読・投稿予定の各ジャーナルの規約を必ず事前に確認した上でご使用ください。開発者は予備的な問題点のあぶりだしのみに使用しています。
-  *Please note that some academic journals explicitly prohibit the use of Large Language Models (LLMs) for peer review, manuscript evaluation, or editing. Users must thoroughly verify the specific policies and guidelines of their target journals before utilizing this tool. The developer utilizes this tool strictly as a preliminary screening step to identify potential issues prior to formal submission.*
+  *Please note that some academic journals explicitly prohibit the use of Large Language Models (LLMs) for peer review, manuscript evaluation, or editing. Users must thoroughly verify the specific policies and guidelines of their target journals before utilizing this tool. The developer utilizes this tool strictly as a preliminary screening step to identify potential issues prior to formal review.*
 
 - **OCRの不正確性について / OCR Inaccuracy**
   PDFを解析する際、OCRの誤認識（文字化けや段組の崩れによるテキストの結合など）に起因して、AIが不正確な指摘（存在しないタイポの指摘など）を行うケースが多く見られます。AIの指摘は必ず元のPDFの該当箇所と照らし合わせて確認してください。
