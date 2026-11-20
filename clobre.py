@@ -2,6 +2,7 @@ import os
 import json
 import urllib.request
 import zipfile
+import docx
 import io
 import streamlit as st
 import pytesseract
@@ -275,7 +276,7 @@ with st.sidebar:
 st.subheader("📂 Upload Files for Batch Processing")
 uploaded_files = st.file_uploader(
     "Drag and drop multiple PDF or TXT files here", 
-    type=["pdf", "txt"], 
+    type=["pdf", "txt", "docx"], 
     accept_multiple_files=True
 )
 
@@ -346,7 +347,22 @@ if start_clicked:
                     finally:
                         if os.path.exists(temp_path):
                             os.remove(temp_path)
-                            
+
+            elif file_ext == 'docx':
+                with st.spinner(f"📘 Reading Word file: {f.name} ..."):
+                    try:
+                        doc = docx.Document(io.BytesIO(f.getvalue()))
+                        paragraphs = [p.text for p in doc.paragraphs if p.text.strip()]
+                        # 表（テーブル）内のテキストも取得する場合
+                        tables_text = []
+                        for table in doc.tables:
+                            for row in table.rows:
+                                tables_text.append("\t".join([cell.text.strip() for cell in row.cells]))
+                        full_text = "\n".join(paragraphs + tables_text)
+                        targets.append({"name": f.name, "text": full_text, "type": "docx"})
+                    except Exception as e:
+                        st.error(f"❌ Failed to read {f.name}: {e}")
+
     elif user_text_input:
         targets.append({"name": "direct_input_text", "text": user_text_input, "type": "direct"})
         
